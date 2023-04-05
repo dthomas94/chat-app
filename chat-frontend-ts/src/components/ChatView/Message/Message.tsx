@@ -1,10 +1,8 @@
+import { AppContext } from "App/context";
+import { StyledMessage } from "components/ChatView/Message/Message.styled";
 import { format, formatRelative } from "date-fns";
 import { useContext } from "react";
-
-import { AppContext } from "../../../App/context";
-import { Message } from "../../../types/Message";
-
-import { StyledMessage } from "./Message.styled";
+import { Message } from "types/Message";
 
 export const ChatViewMessage: React.FC<Message> = (message) => {
   const { users } = useContext(AppContext);

@@ -1,6 +1,5 @@
+import { Button } from "components/Button/Button";
 import styled from "styled-components";
-
-import { Button } from "../../Button/Button";
 
 export const StyledForm = styled.form`
   box-shadow: 0 1px 3px 0 rgba(89, 89, 89, 0.23);

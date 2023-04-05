@@ -1,6 +1,5 @@
+import { StyledListItem } from "components/ChatSidebar/ChannelListItem/ChannelListItem.styled";
 import { NavLink } from "react-router-dom";
-
-import { StyledListItem } from "./ChannelListItem.styled";
 
 type ChannelListeItemProps = {
   channelName: string;

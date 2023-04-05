@@ -1,14 +1,12 @@
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import Typography from "@mui/material/Typography";
+import { AppContext } from "App/context";
+import { Button } from "components/Button/Button";
+import { StyledSelect } from "components/SelectConversation/SelectConversation.styled";
 import { useContext, useState } from "react";
-
-import { AppContext } from "../../App/context";
-import { SocketContext } from "../../socket/context";
-import { useFilteredUsers } from "../../utils/useFilteredUsers";
-import { Button } from "../Button/Button";
-
-import { StyledSelect } from "./SelectConversation.styled";
+import { SocketContext } from "socket/context";
+import { useFilteredUsers } from "utils/useFilteredUsers";
 
 export const SelectConversation: React.FC = () => {
   const { socket } = useContext(SocketContext);

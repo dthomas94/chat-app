@@ -1,4 +1,4 @@
-import { StyledStatusIndicator } from "./StatusIndicator.styled";
+import { StyledStatusIndicator } from "components/StatusIndicator/StatusIndicator.styled";
 
 type StatusIndicatorProps = {
   online?: boolean;

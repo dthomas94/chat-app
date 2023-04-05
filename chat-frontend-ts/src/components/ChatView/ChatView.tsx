@@ -1,7 +1,7 @@
-import { StyledChatView } from "./ChatView.styled";
-import { ChatViewHeader } from "./Header/Header";
-import { ChatViewInput } from "./Input/Input";
-import { ChatViewMessageList } from "./MessageList/MessageList";
+import { StyledChatView } from "components/ChatView/ChatView.styled";
+import { ChatViewHeader } from "components/ChatView/Header/Header";
+import { ChatViewInput } from "components/ChatView/Input/Input";
+import { ChatViewMessageList } from "components/ChatView/MessageList/MessageList";
 
 export const ChatView: React.FC = () => (
   <StyledChatView>

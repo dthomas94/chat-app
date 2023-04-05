@@ -1,10 +1,9 @@
+import { AppContext } from "App/context";
+import { StatusIndicator } from "components/StatusIndicator/StatusIndicator";
 import { useContext } from "react";
 import { useParams } from "react-router";
-
-import { AppContext } from "../../../App/context";
-import { User } from "../../../types/User";
-import { useFilteredUsers } from "../../../utils/useFilteredUsers";
-import { StatusIndicator } from "../../StatusIndicator/StatusIndicator";
+import { User } from "types/User";
+import { useFilteredUsers } from "utils/useFilteredUsers";
 
 import { StyledHeader } from "./Header.styled";
 

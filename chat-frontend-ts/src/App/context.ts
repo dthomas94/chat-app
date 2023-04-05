@@ -1,9 +1,8 @@
 import { createContext } from "react";
-
-import { Channel } from "../types/Channel";
-import { Conversation } from "../types/Conversation";
-import { Message } from "../types/Message";
-import { User } from "../types/User";
+import { Channel } from "types/Channel";
+import { Conversation } from "types/Conversation";
+import { Message } from "types/Message";
+import { User } from "types/User";
 
 export interface IAppContext {
   conversations: Conversation[];

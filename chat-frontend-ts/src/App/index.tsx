@@ -1,22 +1,20 @@
 import Grid from "@mui/material/Grid";
+import { StyledApp } from "App/App.styled";
+import { AppContext } from "App/context";
+import { ChatSidebar } from "components/ChatSidebar/ChatSidebar";
+import { ChatView } from "components/ChatView/ChatView";
+import { Header } from "components/Header/Header";
+import { SelectConversation } from "components/SelectConversation/SelectConversation";
+import { UsernameModal } from "components/UsernameModal/UsernameModal";
 import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router";
 import io, { Socket } from "socket.io-client";
+import { SocketContext } from "socket/context";
+import { Channel } from "types/Channel";
+import { Conversation } from "types/Conversation";
+import { Message } from "types/Message";
+import { User } from "types/User";
 import { v4 } from "uuid";
-
-import { ChatSidebar } from "../components/ChatSidebar/ChatSidebar";
-import { ChatView } from "../components/ChatView/ChatView";
-import { Header } from "../components/Header/Header";
-import { SelectConversation } from "../components/SelectConversation/SelectConversation";
-import { UsernameModal } from "../components/UsernameModal/UsernameModal";
-import { SocketContext } from "../socket/context";
-import { Channel } from "../types/Channel";
-import { Conversation } from "../types/Conversation";
-import { Message } from "../types/Message";
-import { User } from "../types/User";
-
-import { StyledApp } from "./App.styled";
-import { AppContext } from "./context";
 
 const socketPort = process.env.SOCKET_PORT || 3001;
 

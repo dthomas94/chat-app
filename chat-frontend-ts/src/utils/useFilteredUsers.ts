@@ -1,7 +1,6 @@
+import { AppContext } from "App/context";
 import { useContext } from "react";
-
-import { AppContext } from "../App/context";
-import { User } from "../types/User";
+import { User } from "types/User";
 
 export const useFilteredUsers = (): User[] => {
   const { currentUser, users } = useContext(AppContext);

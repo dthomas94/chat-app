@@ -1,10 +1,9 @@
+import { AppContext } from "App/context";
+import { ChatViewMessage } from "components/ChatView/Message/Message";
 import { useContext, useEffect } from "react";
 import { useParams } from "react-router";
-
-import { AppContext } from "../../../App/context";
-import { SocketContext } from "../../../socket/context";
-import { Message } from "../../../types/Message";
-import { ChatViewMessage } from "../Message/Message";
+import { SocketContext } from "socket/context";
+import { Message } from "types/Message";
 
 import { StyledMessageList } from "./MessageList.styled";
 

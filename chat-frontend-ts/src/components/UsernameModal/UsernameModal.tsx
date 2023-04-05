@@ -1,15 +1,13 @@
 import Box from "@mui/material/Box";
 import Input from "@mui/material/Input";
 import Typography from "@mui/material/Typography";
+import { AppContext } from "App/context";
+import { Button } from "components/Button/Button";
+import { StyledUsernameModal } from "components/UsernameModal/UsernameModal.styled";
 import { useContext } from "react";
 import { useHistory, useLocation } from "react-router";
+import { SocketContext } from "socket/context";
 import { v4 } from "uuid";
-
-import { AppContext } from "../../App/context";
-import { SocketContext } from "../../socket/context";
-import { Button } from "../Button/Button";
-
-import { StyledUsernameModal } from "./UsernameModal.styled";
 
 type UsernameModalProps = {
   isOpen?: boolean;

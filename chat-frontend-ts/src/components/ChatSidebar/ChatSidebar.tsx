@@ -1,17 +1,15 @@
 import EditIcon from "@mui/icons-material/Edit";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { AppContext } from "App/context";
+import { Button } from "components/Button/Button";
+import { ChannelListItem } from "components/ChatSidebar/ChannelListItem/ChannelListItem";
+import { StyledChatSidebar } from "components/ChatSidebar/ChatSidebar.styled";
+import { ConversationListItem } from "components/ChatSidebar/ConversationListItem/ConversationListItem";
 import { useContext } from "react";
 import { useHistory } from "react-router-dom";
-
-import { AppContext } from "../../App/context";
-import { SocketContext } from "../../socket/context";
-import { useFilteredUsers } from "../../utils/useFilteredUsers";
-import { Button } from "../Button/Button";
-
-import { ChannelListItem } from "./ChannelListItem/ChannelListItem";
-import { StyledChatSidebar } from "./ChatSidebar.styled";
-import { ConversationListItem } from "./ConversationListItem/ConversationListItem";
+import { SocketContext } from "socket/context";
+import { useFilteredUsers } from "utils/useFilteredUsers";
 
 type ChatSidebarProps = {
   typingStatus?: { conversationId?: string; senderId?: string };

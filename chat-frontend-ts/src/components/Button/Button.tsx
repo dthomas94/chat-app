@@ -1,7 +1,6 @@
+import { StyledButton } from "components/Button/Button.styled";
 import { PropsWithChildren } from "react";
 import { CSSProperties } from "styled-components";
-
-import { StyledButton } from "./Button.styled";
 
 type ButtonProps = {
   onClick?: () => void;

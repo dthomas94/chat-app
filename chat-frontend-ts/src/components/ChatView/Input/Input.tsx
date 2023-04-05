@@ -1,10 +1,12 @@
+import { AppContext } from "App/context";
+import {
+  StyledForm,
+  StyledInput,
+  StyledSubmit,
+} from "components/ChatView/Input/Input.styled";
 import { useContext, useState } from "react";
 import { useParams } from "react-router";
-
-import { AppContext } from "../../../App/context";
-import { SocketContext } from "../../../socket/context";
-
-import { StyledForm, StyledInput, StyledSubmit } from "./Input.styled";
+import { SocketContext } from "socket/context";
 
 export const ChatViewInput: React.FC = () => {
   const { socket } = useContext(SocketContext);

@@ -1,8 +1,7 @@
 import TypingIndicator from "@mui/icons-material/MoreHoriz";
+import { StatusIndicator } from "components/StatusIndicator/StatusIndicator";
 import { NavLink } from "react-router-dom";
-
-import { User } from "../../../types/User";
-import { StatusIndicator } from "../../StatusIndicator/StatusIndicator";
+import { User } from "types/User";
 
 import { StyledListItem } from "./ConversationListItem.styled";
 
